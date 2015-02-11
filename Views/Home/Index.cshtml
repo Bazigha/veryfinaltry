@@ -1,0 +1,621 @@
+﻿@{
+    ViewBag.Title = "Tour_Manager";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+@model Project.Models.Image
+<!doctype html>
+@*<html lang="en">*@
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Limo is a valid html5 CSS3 One Page Template and integrated with bootstrap." >
+	<meta name="keywords" content="CodexCoder,HTML5,CSS3,bootstrap,JavaScript,One Page Template">
+	<meta name="author" content="CodexCoder">
+
+	<title>Tour Manager</title>
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-lightbox.min.css">
+
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.mixitup.min.js"></script>
+	<script src="~/Scripts/custom.js"></script>
+	
+</head>
+
+	<section id="slider">
+		<div class="container-full" style="background-image:url(Images/slide-bg.jpg)">
+			<div class="slider">			
+				<div id="main-slider" class="carousel slide">
+					<ol class="carousel-indicators">
+						<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#main-slider" data-slide-to="1"></li>
+						<li data-target="#main-slider" data-slide-to="2"></li>
+					</ol> <!-- /.carousel-indicators -->
+
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						<div class="active item">
+							<div class="container slide-element">
+								<img src="~/Images/eiffel-tower-at-night-pictures.jpg" width="500" height="500" alt="Responsive Banner for Slider">
+								<h1>Welcome to Tour Manager</h1>
+								<p>
+									Tour Manager is a touring website for thos who want to have a happy 
+                                    and economical tour to different places. Different hotels offer their 
+                                    packages for different tour at this website.
+								</p>
+
+								
+							</div> <!-- /.slide-element -->
+						</div> <!--/.active /.item -->
+
+						<div class="item">
+							<div class="container slide-element">
+								<img src="~/Images/brooklyn-bridge-ny.jpg" width="500" height="500" alt="Features">
+								<h1>Features</h1>
+								<p>
+									<br>Fully Responsive
+									<br>Pricing 
+									<br>Reviews 
+									<br>Packages
+									<br>About Us
+									<br>Team, Contact form, Map and Many More. 
+								</p>					
+								
+							</div> <!-- /.slide-element -->
+						</div> <!-- /.item -->
+
+						<div class="item">
+							<div class="container slide-element">
+								<img src="~/Images/London-Eye-4.jpg" width="500" height="500" alt="Used Component.png">
+								<h1>Contact Us </h1>
+								<p>
+									
+									<br>Facebook
+									<br>Twitter
+									<br>Skype
+									<br>Gmail
+								</p>					
+								
+							</div> <!-- /.slide-element -->
+						</div> <!-- /.item -->
+					</div> <!-- /.carousel-inner -->
+					
+					<!-- slider nav -->
+					<a class="carousel-control left" href="#main-slider" data-slide="prev"><img src="~/Images/111645-glowing-green-neon-icon-media-a-media31-back.png" width="70" height="70"/></a>
+					<a class="carousel-control right" href="#main-slider" data-slide="next"><img src="~/Images/111646-glowing-green-neon-icon-media-a-media32-forward.png" width="70" height="70"/></a>
+
+				</div> <!-- /#main-slider -->
+			</div> <!-- /.slider -->
+		</div> <!-- /.container-full -->
+	</section><!-- /#Slider -->
+
+
+
+<section id="somework">
+	<div class="worksection">
+		<div class="container-full">
+
+			<div class="works">
+				<div class="container">
+					<h3>Image Gallery</h3>
+				</div>
+			</div> <!-- /.works -->
+
+			<div class="container">
+				<div class="works-img">
+					<div id="work-slide" class="carousel slide">
+
+						<div class="slide2nev">
+							<a class="carousel-control left" href="#work-slide" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+							<a class="carousel-control right" href="#work-slide" data-slide="next"><i class="fa fa-chevron-left"></i></a>
+						</div> <!-- /.slide2nev -->
+
+							<!-- Slider items -->
+							<div class="carousel-inner">
+
+								<div class="active item">
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/10670126_932072983483467_7665913131906251275_n.jpg" width="200" height="200" alt="9">
+											<figcaption>
+												<h4>Christmas Gift</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/155637-great-wall-of-china.jpg" width="200" height="200" alt="2">
+											<figcaption>
+												<h4>Care Centre</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/brooklyn-bridge-ny.jpg" width="200" height="200" alt="5">
+											<figcaption>
+												<h4>Draw Thinking</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/9d0870b3aba995d3967e1c556b632f6d.jpg" width="200" height="200" alt="2">
+											<figcaption>
+												<h4>Pizza Profile</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+								</div> <!-- /.active /.item -->
+
+								<div class="item">
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/457004_383381558393297_1880614822_o.jpg" width="200" height="200" alt="6">
+											<figcaption>
+												<h4>Touch your Career</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/eiffel-tower-at-night-pictures.jpg" width="200" height="200" alt="1">
+											<figcaption>
+												<h4>Technology</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/India-Taj-Mahal-Christopher-Chan.jpg" width="200" height="200" alt="7">
+											<figcaption>
+												<h4>Gift</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/Lake-Saiful-Muluk-6.jpg" width="200" height="200" alt="3">
+											<figcaption>
+												<h4>Pizza Profile</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+								</div> <!-- /.item -->
+
+								<div class="item">
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/London-Eye-4.jpg" width="200" height="200" alt="9">
+											<figcaption>
+												<h4>Christmas Gift</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/Jeddah_830X370-pxl_0.jpg" width="200" height="200" alt="6">
+											<figcaption>
+												<h4>Touch your Career</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/o-LONDON-900.jpg" width="200" height="200" alt="8">
+											<figcaption>
+												<h4>Love</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+									<div class="col-sm-3">
+										<figure>
+											<img src="~/Images/turkey5.jpg" width="200" height="200" alt="7">
+											<figcaption>
+												<h4>Gift</h4>
+											</figcaption>							
+										</figure>	
+									</div>
+
+								</div> <!-- /.item -->
+
+							</div>  <!-- /.carousel-inner -->
+						<!--/.carousel -->
+
+					</div> <!-- /#work-slide -->
+				</div> <!-- /.works-img -->
+			</div> <!--/.container-->
+		</div> <!-- /.container-full -->
+	</div> <!-- /.worksection -->
+</section><!-- /#somework -->
+
+<section id="aboveportfolio">
+	<div class="container-full">
+		<div class="shadow">
+			<div class="container">
+
+				<h2 class="text-center">
+					We offer to live your dream...
+				</h2>
+
+				<p class="text-center">
+					Tour Manager provides you with different touring packages offered by different hotels at differet prices. You can book any package that suites you and enjoy.
+                    The information of hotels and packages are visible to only those who are member of this website. If you want to have agreat tour at very economic rate, register yourself and enjoy.
+				</p>
+
+				<div>
+					<ul>
+						<li class="btn"><a href="#service" class="btn left">Learn more</a></li>
+						<li class="btn"><a href="#" class="btn right">Get it now</a></li>
+					</ul>
+				</div>	
+
+			</div> <!-- /.container -->
+		</div> <!-- /.shadow -->
+	</div> <!-- /.container-full -->
+</section><!-- /#aboveportfolio -->
+
+<section id="aboutus">
+	<div class="container-full">
+		<div class="container">
+
+			<div id="aboutusleft" class="col-xs-6">
+				<div class="heading">
+					<h3>About Us</h3>
+				</div>
+				<p>
+					Tour Manager provides you with different touring packages offered by different hotels at differet prices. You can book any package that suites you and enjoy.
+                    The information of hotels and packages are visible to only those who are member of this website. If you want to have agreat tour at very economic rate, register yourself and enjoy.
+				</p>	
+			</div> <!-- /#aboutusleft -->
+
+			<div id="aboutusright" class="col-xs-6">
+				<div class="heading">
+					<h3>Survey of reviews shows the popularity of the range of packages</h3>
+				</div>
+
+				<p>Umrah Package</p>
+				<div class="progress">
+					<div class="progress-bar progress-web-development" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+						<span class="percent">100%</span>
+					</div>
+				</div>
+
+				<p>Europe Package</p>
+				<div class="progress">
+					<div class="progress-bar progress-web-desingn" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						<span class="percent">80%</span>
+					</div>
+				</div>
+
+				<p>Arab Package</p>
+				<div class="progress">
+					<div class="progress-bar progress-photoshop" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+						<span class="percent">90%</span>
+					</div>
+				</div>
+
+				<p>World Cup Package</p>
+				<div class="progress">
+					<div class="progress-bar progress-issustrator" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+						<span class="percent">75%</span>
+					</div>
+				</div>
+
+			</div> <!-- /#aboutusright -->
+			
+		</div> <!-- /.container -->
+		<div class="clear-bottom"></div>
+	</div> <!-- /.container-full -->
+</section><!-- /.aboutus -->
+
+<section id="service">
+	<div class="servicediv">
+		<div class="container-full">
+			<div class="container">
+				<h3>Package Categories</h3>
+				
+				<ul>
+
+					<li class="col-xs-3">
+						<div>
+							<p class="faicons"><img src="~/Images/hc137102752078.png" /></p>
+							<h4>Umrah & Haj Packages</h4>
+							<p>We offer Umrak package (15 days).</p>
+						</div>
+					</li>
+
+					<li class="col-xs-3">
+						<div>
+							<p class="faicons"><img src="~/Images/Egypt_Sphinx_Giza_Pyramid.jpg" /></p>
+							<h4>Culture Packages</h4>
+							<p>We offer Culture package to museums and ancient ruins.</p>
+						</div>
+					</li>
+
+					<li class="col-xs-3">
+						<div>
+							<p class="faicons"><img src="~/Images/20355673.jpg" /></p>
+							<h4>Fun & Entertainment Packages</h4>
+							<p>We offer tour to different fun & entertainment place.</p>
+						</div>
+					</li>
+
+					<li class="col-xs-3">
+						<div>
+							<p class="faicons"><img src="~/Images/24531053.jpg" /></p>
+							<h4>Family Packages</h4>
+							<p>We offer family tour to different places.</p>
+						</div>
+					</li>
+
+				</ul>
+
+			</div><!-- /.container -->
+		</div><!-- /.container-full -->
+	</div> <!-- /.servicediv -->
+</section><!-- /#Service -->
+
+<section id="pricing">
+	<div class="container-full">
+
+		<div class="clear-top"></div>
+
+		<div class="container">
+			<h3>Our Pricing</h3>
+			<p class="text-center"></p>
+			<div class="clear-top"></div>
+
+			<ul>
+				<li class="col-xs-3">
+					<div>
+						<h4>Haj & Umrah Package</h4>
+						<h5>$5000</h5>
+						<p>Flight Reservation</p>
+						<p>Stay & Food</p>
+						<p>Tour Guide</p>
+						<p>Transport</p>
+						<p></p>
+						<p><a class="btn" href="/Booking/Booking1">Subscribe</a></p>
+					</div>
+				</li>
+
+				<li class="col-xs-3">
+					<div>
+						<h4>Culture Package</h4>
+						<h5>$320</h5>
+						<p>Flight Reservation</p>
+						<p>Stay & Food</p>
+						<p>Tour Guide</p>
+						<p>Transport</p>
+						<p></p>
+						<p><a class="btn" href="/Booking/Booking1">Subscribe</a></p>
+					</div>
+				</li>
+
+				<li class="col-xs-3">
+					<div>
+						<h4>Family Package</h4>
+						<h5>$320</h5>
+						<p>Flight Reservation</p>
+						<p>Stay & Food</p>
+						<p>Tour Guide</p>
+						<p>Transport</p>
+						<p></p>
+						<p><a class="btn" href="/Booking/Booking1">Subscribe</a></p>
+					</div>
+				</li>
+
+				<li class="col-xs-3">
+					<div>
+						<h4>Fun & Entertainment</h4>
+						<h5>$320</h5>
+						<p>Flight Reservation</p>
+						<p>Stay & Food</p>
+						<p>Tour Guide</p>
+						<p>Transport</p>
+						<p></p>
+						<p><a class="btn" href="/Booking/Booking1">Subscribe</a></p>
+					</div>
+				</li>
+
+			</ul>
+
+		</div> <!-- /.container -->
+	</div> <!-- /.container-full -->
+</section> <!-- /#pricing -->
+
+
+<section id="team">
+	<div class="container-full">
+
+		<div class="clear-top"></div>
+
+		<div class="container">
+            <center><table>
+                <tr>
+                    <td ><h3>Contact Us</h3></td>
+                    <td></td><td><td><td></td>
+                    <td><img src="~/Images/Mobile-Marketing-Congress-2012.png" width="100" height="100" /></td>
+                </tr>
+			</table></center>
+			
+            @*<h3>Contact Us<img src="~/Images/Mobile-Marketing-Congress-2012.png" width="100" height="100" /></h3>*@
+			<p class="text-center"> You can contact us whenever you want. If you have any question, Feel free to ask away. </p>
+			
+			<div class="clear-top"></div>
+			
+			<ul>
+				<li class="col-xs-3">
+					<div class="stafcontainer">
+
+						<div class="staf">
+							<div class="avatar">
+								<a href="https://www.facebook.com/hunain.fatima.12"><img src="~/Images/facebook-logo1.png" alt="Avatar Team"></a>
+							</div>
+							<h5 class="text-center"></h5>
+							<h6 class="text-center"></h6>
+							<p>
+								You can contact us through Facebook If you have any questions regarding our services or you want to know packages.
+                                <br /><br /><br />
+							</p>
+						</div> <!-- /.staf -->
+					</div> <!-- /.stafcontainer -->
+				</li><!-- /.col-xs-3 -->
+
+				<li class="col-xs-3">
+					<div class="stafcontainer">
+
+						<div class="staf">
+							<div class="avatar">
+								<a href="https://twitter.com/"><img src="~/Images/Twitter_logo.png" alt="Avatar Team"></a>
+							</div>
+							<h5 class="text-center"></h5>
+							<h6 class="text-center"></h6>
+							<p>
+								You can contact us through Twitter If you have any questions regarding our services or you want to know new packages.
+                                <br /><br /><br />
+							</p>
+						</div> <!-- /.staf -->
+					</div> <!-- /.stafcontainer -->
+				</li><!-- /.col-xs-3 -->
+
+				<li class="col-xs-3">
+					<div class="stafcontainer">
+
+						<div class="staf">
+							<div class="avatar">
+								<a href="mailto:hunain.fatima.70"><img src="~/Images/skype.png" alt="Avatar Team"></a>
+							</div>
+							<h5 class="text-center"></h5>
+							<h6 class="text-center"></h6>
+							<p>
+								You can contact us through Skype If you have any questions regarding our services or you want to know new packages.
+                                <br /><br /><br />
+							</p>
+						</div> <!-- /.staf -->
+					</div> <!-- /.stafcontainer -->
+				</li><!-- /.col-xs-3 -->
+
+				<li class="col-xs-3">
+					<div class="stafcontainer">
+
+						<div class="staf">
+							<div class="avatar">
+								<a href="mailto: mcsf13m026@pucit.edu.pk"><img src="~/Images/Gmail_Icon.png" alt="Avatar Team"></a>
+							</div>
+							<h5 class="text-center"></h5>
+							<h6 class="text-center"></h6>
+							<p>
+								You can contact us through Gmail If you have any questions regarding our services or you want to know new packages.
+                                <br /><br /><br />
+							</p>
+						</div> <!-- /.staf -->
+					</div> <!-- /.stafcontainer -->
+				</li><!-- /.col-xs-3 -->
+			</ul>
+		</div> <!-- /.container -->
+	</div><!-- /.container-full -->
+</section><!-- /#team -->
+   
+<section id="contactus">
+	<div class="container-full">
+
+		<!-- <div id="map_canvas"></div> /#map_canvas -->
+
+<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+src="https://maps.google.com.bd/maps?q=dhaka+on+google+map&amp;ie=UTF8&amp;hq=&amp;gl=bd&amp;ll=23.709921,90.407143&amp;spn=0.734303,1.352692&amp;t=m&amp;z=10&amp;iwloc=A&amp;output=embed">
+</iframe>
+
+
+		<div class="shadowcontainer">
+			<div class="shadow">
+                 <br /><br /><br />
+				<div class="clear-top"></div>
+
+				<div class="container">
+					<div class="col-md-6 pull-left">
+
+						<form role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="InputEmail1" placeholder="name...">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="InputPassword1" placeholder="email...">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="8" placeholder="message..."></textarea>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div> <!-- /.col-md-6 -->
+
+					
+
+						<div class="col-md-3 gettouch pull-right"> 
+							<h4>Get in touch</h4>
+							<p class="email">
+								E-mail
+							</p>
+							<p>
+								example@site.com
+							</p>
+							<p class="email">
+								Web
+							</p>
+							<p>
+								www.site.com
+							</p>
+							<p class="address">
+								Address
+							</p>
+							<p>
+								Motijheel, Dhaka
+								Bangladesh
+							</p>
+						</div> <!-- /.col-md-3 /.gettouch -->
+						
+				</div> <!-- /.container -->
+			</div><!-- /.shadow -->
+		</div> <!-- /.shadowcontainer -->
+	</div> <!-- /.container-full -->
+</section> <!-- /.contactus-->
+
+<section id="scroller">
+	<div class="container-full">
+
+		<div class="gototop"></div>
+
+		<div class="gotobottom">
+			<div class="goup">
+				<div class="gotoup">
+					<a class="header" href="#header"><i class="fa fa-arrow-circle-up"></i></a>
+				</div> <!-- /.gotoup -->
+			</div> <!-- /.goup -->
+		</div> <!-- /.gotobottom -->
+	</div> <!-- /.container-full -->
+</section> <!--   /#scroller  -->
+
+<section id="scroller2">
+	<div class="gotop">
+		<a class="header" href="#header"><i class="fa fa-arrow-circle-o-up"></i></a>
+	</div> <!-- /.gotop -->
+</section> <!--   /#scroller2  -->

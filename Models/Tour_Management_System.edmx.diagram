@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="690ae456dfd0476dbcd73e9c72635502" Name="Diagram1">
+        <EntityTypeShape EntityType="Tour_Management_SystemModel.Booking" Width="1.5" PointX="5.875" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tour_Management_SystemModel.Customer" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tour_Management_SystemModel.Hotel" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tour_Management_SystemModel.Image" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tour_Management_SystemModel.Service" Width="1.5" PointX="3.375" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="Tour_Management_SystemModel.FK_Booking_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Tour_Management_SystemModel.FK_Booking_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="Tour_Management_SystemModel.FK_Service_Hotel" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

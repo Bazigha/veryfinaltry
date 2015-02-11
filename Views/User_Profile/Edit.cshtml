@@ -1,0 +1,84 @@
+﻿@model Project.Models.Customer
+@{
+    ViewBag.Title = "Edit_Profile";
+    Layout = "~/Views/Shared/_Layout5.cshtml";
+}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Limo is a valid html5 CSS3 One Page Template and integrated with bootstrap." >
+	<meta name="keywords" content="CodexCoder,HTML5,CSS3,bootstrap,JavaScript,One Page Template">
+	<meta name="author" content="CodexCoder">
+
+	<title>User Profile</title>
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-lightbox.min.css">
+
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.mixitup.min.js"></script>
+	<script src="~/Scripts/custom.js"></script>
+	
+</head>
+<body>
+	
+
+    <div class="shadowcontainer">
+    <div class="shadow">
+
+				<div class="clear-top"></div>
+				<div class="container">
+					<div class="col-md-6 pull-left">
+                        <div class="contactus">
+                        @using(Html.BeginForm("Edit_Page", "User_Profile", FormMethod.Post))
+                        {
+                            @Html.ValidationSummary(true)
+                            <fieldset>
+                                <legend>Edit Record</legend>
+                                <div class ="editor-lable">
+                                @Html.LabelFor(m=>m.Id): 
+                                </div>
+                                @Html.TextBoxFor(m => m.Id)
+                                <br />
+                                @Html.LabelFor(m => m.First_Name)
+                                <br />
+                                @Html.TextBoxFor(m => m.First_Name)
+                                <br />
+                                @Html.LabelFor(m => m.Last_Name)
+                                <br />
+                                @Html.TextBoxFor(m => m.Last_Name)
+                                <br />
+                                @Html.LabelFor(m => m.Email_ID)
+                                <br />
+                                @Html.TextBoxFor(m => m.Email_ID)
+                                <br />
+                                @Html.LabelFor(m => m.Password)
+                                <br />
+                                @Html.PasswordFor(m => m.Password)
+                                <br />
+                                @Html.LabelFor(m => m.Confirm_Password)
+                                <br />
+                                @Html.PasswordFor(m => m.Confirm_Password)
+                                <br />
+                                @Html.RadioButtonFor(m => m.Gender, "male")&nbsp; &nbsp; Male
+                                <br />
+                                @Html.RadioButtonFor(m => m.Gender, "female")&nbsp; &nbsp; Female
+                                <br />
+                                <br />
+                                <input type="submit" value="Edit" />
+                            </fieldset>
+                        }
+						</div>
+					</div> <!-- /.col-md-6 -->
+               </div>
+    </div>
+</div>
+    <br />
+   
+
+</body>
+</html>

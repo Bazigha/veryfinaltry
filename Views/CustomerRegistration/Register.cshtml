@@ -1,0 +1,118 @@
+﻿@model Project.Models.Customer
+@{
+    ViewBag.Title = "Register";
+}
+@section Scripts {
+@Scripts.Render("~/bundles/jqueryval")}
+<!--------Login-------->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Limo is a valid html5 CSS3 One Page Template and integrated with bootstrap." >
+	<meta name="keywords" content="CodexCoder,HTML5,CSS3,bootstrap,JavaScript,One Page Template">
+	<meta name="author" content="CodexCoder">
+
+	<title>Tour Manager</title>
+
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-lightbox.min.css">
+
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.mixitup.min.js"></script>
+	<script src="~/Scripts/custom.js"></script>
+	
+</head>
+<body>
+
+<div class="shadowcontainer">
+    <div class="shadow">
+
+				<div class="clear-top"></div>
+                <br /><br />
+				<div class="container">
+					<div class="col-md-6 pull-left">
+                        <p>
+                            <form action="/CustomerRegistration/save" method="post" enctype="multipart/form-data" >
+
+                                Upload Image: <input type="file" id="file" name="file" />
+                                <br />
+                               <input type="submit" value="Upload" /> 
+                            </form>
+                        </p>
+                     <div class="contactus"> 
+                        @{Html.BeginForm("Add", "CustomerRegistration", FormMethod.Post);}
+                        <br />
+                        <div class="editor-label">
+                        @Html.LabelFor(M => M.First_Name)
+                        <br />
+                            </div>
+
+                        <div class="editor-field">
+                        @Html.TextBoxFor(m => m.First_Name)
+                        @Html.ValidationMessageFor(m => m.First_Name)
+                        <br /></div>
+
+                        <div class="editor-label">
+                        @Html.LabelFor(m => m.Last_Name)
+                        <br /></div>
+
+                        <div class="editor-field">
+                        @Html.TextBoxFor(m => m.Last_Name)
+                        @Html.ValidationMessageFor(m => m.Last_Name)
+                        <br /></div>
+
+                        <div class="editor-label">
+                        @Html.LabelFor(m => m.Email_ID)
+                        <br /></div>
+
+                        <div class="editor-field">
+                        @Html.EditorFor(m => m.Email_ID)
+                        @Html.ValidationMessageFor(m => m.Email_ID)
+                        <br /></div>
+
+                        <div class="editor-label">
+                        @Html.LabelFor(m => m.Password)
+                        <br /></div>
+
+                            <div class="editor-field">
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+                        <br /></div>
+
+                        <div class="editor-label">
+                        @Html.LabelFor(m => m.Confirm_Password)
+                        <br /></div>
+
+                        <div class="editor-field">
+                        @Html.PasswordFor(m => m.Confirm_Password)
+                        @Html.ValidationMessageFor(m => m.Confirm_Password)
+                        <br /></div>
+
+                        <div class="editor-label">
+                        @Html.LabelFor(m => m.Gender)
+                        <br /></div>
+                        <div class="editor-field">
+                        @Html.RadioButtonFor(m => m.Gender, "male")&nbsp; &nbsp; Male
+                        <br />
+                        @Html.RadioButtonFor(m => m.Gender, "female")&nbsp; &nbsp; Female
+                        @Html.ValidationMessageFor(m => m.Gender)
+                        <br /></div>
+                        <input type="submit" value="Register" />
+
+                        @{Html.EndForm();}
+                        <br />
+                        <div>@Html.ActionLink("Home", "Index")</div>
+                    </div>
+		       </div> <!-- /.col-md-6 -->
+          </div>
+    </div>
+</div>
+    <br />
+   
+</body>
+    </html>

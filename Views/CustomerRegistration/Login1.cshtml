@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<!--------Login-------->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Limo is a valid html5 CSS3 One Page Template and integrated with bootstrap." >
+	<meta name="keywords" content="CodexCoder,HTML5,CSS3,bootstrap,JavaScript,One Page Template">
+	<meta name="author" content="CodexCoder">
+
+	<title>Tour Manager</title>
+
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-lightbox.min.css">
+
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.mixitup.min.js"></script>
+	<script src="~/Scripts/custom.js"></script>
+	
+</head>
+<body>
+	
+<div class="shadowcontainer">
+    <div class="shadow">
+
+				<div class="clear-top"></div>
+                <br /><br />
+				<div class="container">
+					<div class="col-md-6 pull-left">
+                        @{Html.BeginForm("Login", "CustomerRegistration", FormMethod.Post);}
+                        @Html.Label("Id: ")
+                        <br />
+                        @Html.Editor("id")
+                        <br />
+                        @Html.Label("Email ID: ")
+                        <br />
+                        @Html.Editor("email")
+                        <br />
+                        @Html.Label("Password: ")
+                        <br />
+                        @Html.Editor("pass")
+                        <br />
+                        <input type="submit" value="Login" />
+                        <br />
+                        @{Html.EndForm();}
+						
+
+					</div> <!-- /.col-md-6 -->
+               </div>
+    </div>
+</div>
+    <br />
+</body>
+    </html>

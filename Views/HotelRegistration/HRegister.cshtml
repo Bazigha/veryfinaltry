@@ -1,0 +1,96 @@
+﻿@model Project.Models.Hotel
+@{
+    ViewBag.Title = "Hotel_Register";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+@section Scripts {
+@Scripts.Render("~/bundles/jqueryval")}
+
+<!--------Login-------->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Limo is a valid html5 CSS3 One Page Template and integrated with bootstrap." >
+	<meta name="keywords" content="CodexCoder,HTML5,CSS3,bootstrap,JavaScript,One Page Template">
+	<meta name="author" content="CodexCoder">
+
+	<title>Tour Manager</title>
+
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+	<link rel="stylesheet" type="text/css" href="~/Content/bootstrap-lightbox.min.css">
+
+	<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+	<script src="~/Scripts/jquery.mixitup.min.js"></script>
+	<script src="~/Scripts/custom.js"></script>
+	
+</head>
+<body>
+<div class="shadowcontainer">
+    <div class="shadow">
+
+				<div class="clear-top"></div>
+                <br /><br />
+				<div class="container">
+					<div class="col-md-6 pull-left">
+                        <p>
+                            <form action="/HotelRegistration/save" method="post" enctype="multipart/form-data" >
+
+                                Upload Image: <input type="file" id="file" name="file" />
+                                <br />
+                               <input type="submit" value="Upload" /> 
+                            </form>
+                        </p>
+                        
+                        @{Html.BeginForm("Add_Hotel", "HotelRegistration", FormMethod.Post);}
+                        <br />
+                        @Html.LabelFor(m => m.Hotel_Name)
+                        <br />
+                        @Html.TextBoxFor(m => m.Hotel_Name)
+                        @Html.ValidationMessageFor(m=>m.Hotel_Name)
+                        <br />
+                        @Html.LabelFor(m => m.Email_ID)
+                        <br />
+                        @Html.EditorFor(m => m.Email_ID)
+                        @Html.ValidationMessageFor(m => m.Email_ID)
+                        <br />
+                        @Html.LabelFor(m => m.Address)
+                        <br />
+                        @Html.TextBoxFor(m => m.Address)
+                        @Html.ValidationMessageFor(m=>m.Address)
+                        <br />
+                        @Html.LabelFor(m => m.Password)
+                        <br />
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m=>m.Password)
+                        <br />
+                        @Html.LabelFor(m => m.Phone_Number)
+                        <br />
+                        @Html.EditorFor(m => m.Phone_Number)
+                        @Html.ValidationMessageFor(m=>m.Phone_Number)
+                       
+                        <br />
+                        @Html.LabelFor(m => m.Confirm_Password)
+                        <br />
+                        @Html.TextBoxFor(m => m.Confirm_Password)
+                        @Html.ValidationMessageFor(m=>m.Confirm_Password)
+                        <br />
+                        <br />
+                        <input type="submit" value="Register" />
+
+                        @{Html.EndForm();}
+
+						
+
+					</div> <!-- /.col-md-6 -->
+               </div>
+    </div>
+</div>
+    <br />
+    
+</body>
+    </html>
